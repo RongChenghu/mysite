@@ -1,0 +1,17 @@
+# /mysite/wordpress/.gitignore
+
+# WordPress 核心
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/advanced-cache.php
+
+# 私密信息
+.env
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log

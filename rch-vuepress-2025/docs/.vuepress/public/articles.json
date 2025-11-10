@@ -1,0 +1,20 @@
+[
+  {
+    "title": "我如何设计聚合支付平台的多商户与对账体系",
+    "date": "2025-11-06",
+    "link": "/blog/36-open-payment-system.html",
+    "summary": "从内部系统到平台化开放，我如何重新设计聚合支付的对账与多商户账务体系。"
+  },
+  {
+    "title": "让 AI 落地有声",
+    "date": "2025-11-02",
+    "link": "/blog/32-ai-rule-engine.html",
+    "summary": "我分享了一个AI与规则引擎结合的工业系统案例，让算法真正参与到控制决策中。"
+  },
+  {
+    "title": "我是如何把负荷预测，做成一个可配置的产品",
+    "date": "2025-10-27",
+    "link": "/blog/27-energy-prediction-product.html",
+    "summary": "记录我如何将负荷预测算法封装为可配置产品，让能源系统具备自学习能力。"
+  }
+]

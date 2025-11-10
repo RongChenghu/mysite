@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+SQLAlchemy>=2.0
+pymysql
+openai>=1.40.0
+numpy
+pdfplumber
+python-docx
+spacy
+jieba
+
+playwright
+beautifulsoup4
+lxml

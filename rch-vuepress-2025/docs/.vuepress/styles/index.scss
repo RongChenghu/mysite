@@ -1,0 +1,75 @@
+/* 品牌主色 */
+:root {
+  --vp-c-brand: #2e6e6e;
+  --vp-c-brand-light: #3daaa0;
+  --vp-c-brand-dark: #1f4c4c;
+  --vp-c-text-muted: #6b7280;
+}
+
+/* Hero 背景动效与按钮 */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at 30% 20%,
+    #3daaa0 0%,
+    #2e6e6e 35%,
+    #0d1414 100%
+  );
+  color: white;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+    from 0deg,
+    rgba(61, 170, 160, 0.25),
+    rgba(46, 110, 110, 0.15),
+    rgba(61, 170, 160, 0.25)
+  );
+  animation: rotateGlow 18s linear infinite;
+  z-index: 0;
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero .action-button {
+  border-radius: 8px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #3daaa0, #2e6e6e);
+  transition: all 0.3s ease;
+}
+.hero .action-button:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+@keyframes rotateGlow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 去掉所有正文和列表中的超链接下划线 */
+a {
+  text-decoration: none !important;
+}
+/* 深色模式 */
+html.dark {
+  --vp-c-bg: #101414;
+  --vp-c-text-muted: #9ca3af;
+  .hero {
+    background: radial-gradient(circle at 70% 30%, #1b4f4f 0%, #0a0f0f 100%);
+  }
+  .card {
+    background: #162020;
+  }
+}
+
+.project-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(46, 110, 110, 0.15);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
